@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 320px;
+      font-family: Arial, sans-serif;
+      margin: 10px;
+      background-color: #f9f9f9;
+    }
+    h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    .input-group {
+      display: flex;
+      gap: 5px;
+      margin-bottom: 10px;
+    }
+    input {
+      flex: 1;
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 6px 12px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6px;
+      background: white;
+      border: 1px solid #eee;
+      margin-bottom: 4px;
+      border-radius: 4px;
+    }
+    .site-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: #444;
+    }
+    .favicon {
+      width: 16px;
+      height: 16px;
+      border-radius: 2px;
+    }
+    .delete-btn {
+      background-color: #dc3545;
+      padding: 3px 8px;
+      font-size: 12px;
+    }
+    .delete-btn:hover {
+      background-color: #bd2130;
+    }
+    .lock-icon {
+      font-size: 14px;
+      color: #aaa;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Черный список</h3>
+  <div class="input-group">
+    <input type="text" id="siteInput" placeholder="example.com">
+    <button id="addBtn">Добавить</button>
+  </div>
+  <ul id="sitesList"></ul>
+
+  <script src="popup.js"></script>
+</body>
+</html>
